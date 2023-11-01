@@ -1,57 +1,56 @@
 @charset "utf-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body, h1, h3, p, ul, li {
+    margin: 3px;
+    padding: 3px;
 }
+
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
 }
 
 
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 10px;
     text-align: center;
-    margin-top: -90px;
+    margin-top: -100px;
+width: auto;
+margin-bottom: -10px;
 }
+
+   
 
 header h1 {
     font-size: 36px;
-    margin-bottom: 10px;
+    top:-40px;
 }
+
 
 nav {
-    display: block;
+        display: block;
+        margin-top: -0px;
 }
 
-nav > img#capa {
-   width: 500px;
-margin-bottom: -100px;
-
-}
+nav > img#logo { 
+width: 500px;
+    }
 
 nav ul {
     list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
+    text-transform: uppercase;
+    position: unset;
+    top: 70px;
+    left: 500px;
 }
 
 nav li {
@@ -79,78 +78,80 @@ nav a {
     
 }
 
-
 nav a:hover {
     color:black;
     
 
 
 }
+h2{
 
-main {
-    
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin:15px;
+    padding:15px;
 }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+aside{ 
+    position: relative;
+}
+
+
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
 .product {
     background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
     padding: 20px;
-    margin-bottom: 20px;
+    text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
-    
-    width: 320px;
+    max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
 .product h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .product p {
     font-size: 16px;
+    color: #666;
     margin-bottom: 10px;
 }
 
-.product strong {
-    color: #e44d26;
+.product .price {
     font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.product button {
-    background-color: #e44d26;
+.product .add-to-cart {
+    background-color: #333;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.product button:hover {
-    background-color: #ff6c40;
+.product .add-to-cart:hover {
+    background-color: #555;
 }
 
 
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #333;
     color: #fff;
-}
-
-
-.product.feminino {
-    border: 2px solid #ff6c40;
+    text-align: center;
+    padding: 10px 0;
 }
